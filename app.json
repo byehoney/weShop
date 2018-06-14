@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/qa/qa",
+    "pages/alive/alive",
+    "pages/super/super",
+    "pages/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#ccc",
+    "selectedColor":"#3089dc",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/qa/qa",
+        "text": "问答"
+      },{
+        "pagePath": "pages/alive/alive",
+        "text": "直播"
+      },{
+        "pagePath": "pages/super/super",
+        "text": "干货"
+      },{
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      }
+    ]
+  }
+}

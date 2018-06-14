@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<view class="wrap">
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#fff" indicator-active-color="#3089dc">
+        <block wx:for="{{imgUrls}}" wx:for-index="idx" wx:key="index">
+        <swiper-item class="swiper-item" data-index="{{idx}}" bindtap="jump">
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+        </block>
+    </swiper>
+    <view class="tab-box">
+        <view class="tab-item">
+            <view class="tab-text">我的关注</view>
+            <view class="tab-num">0</view>
+        </view>
+        <view class="tab-item">
+            <view class="tab-text">我的关注</view>
+            <view class="tab-num">0</view>
+        </view>
+        <view class="tab-item">
+            <view class="tab-text">我的关注</view>
+            <view class="tab-num">0</view>
+        </view>
+        <view class="tab-item">
+            <view class="tab-text">我的关注</view>
+            <view class="tab-num">0</view>
+        </view>
+    </view>
+</view>
