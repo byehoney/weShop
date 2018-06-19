@@ -21,6 +21,7 @@
     line-height: 80rpx;
     position: relative;
     padding-top: 20rpx;
+    cursor: pointer;
 }
 .tab-item .tab-num{
     position: absolute;
