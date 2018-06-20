@@ -1,10 +1,12 @@
 {
   "pages":[
+    "pages/BurstingProject/BurstingProject",
     "pages/home/home",
     "pages/qa/qa",
     "pages/alive/alive",
     "pages/super/super",
-    "pages/message/message"
+    "pages/message/message",
+"pages/BurstingProjectDetail/BurstingProjectDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,7 +21,7 @@
     "borderStyle":"white",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/BurstingProject/BurstingProject",
         "text": "首页"
       },
       {

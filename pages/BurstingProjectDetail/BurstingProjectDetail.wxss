@@ -1,0 +1,81 @@
+/* pages/BurstingProjectDetail/BurstingProjectDetail.wxss */
+.page{
+    width: 100%;
+}
+.page .main-image{
+    width: 100%;
+}
+.fl{
+    float: left;
+}
+.clearfix:after{ 
+    display:block;
+    content:'';
+    height:0; 
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{ 
+    zoom:1;
+}
+.title{
+    text-align: center;
+}
+.info-box{
+    width: 92%;
+    margin:0 auto;
+    height: 84rpx;
+    line-height: 84rpx;
+    border-bottom:2rpx solid #e9e9e9;
+}
+.info-box .text{
+    width: 26%;
+}
+.info-box input{
+    height: 84rpx;
+    line-height: 84rpx;
+    width: 70%;
+    padding-left: 20rpx;
+}
+.note .note-title{
+    padding-left:4%;
+    line-height: 84rpx;
+}
+.note textarea{
+    height: 400rpx;
+    width: 92%;
+    margin:0 auto;
+    border: 2rpx solid #e9e9e9;
+    margin-bottom: 40rpx;
+    padding:20rpx;
+}
+.note{
+    position: relative;
+}
+.note .count{
+    position: absolute;
+    bottom:20rpx;
+    right:6%;
+    z-index:10;
+}
+.count .num{
+    color:#3089dc;
+}
+.tj-btn{
+    width: 80%;
+    margin:0 auto 60rpx;
+    text-align: center;
+    background-color:#3089dc;
+    color:#fff;
+    font-size: 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 16rpx;
+}
+.tel-icon{
+    position: fixed;
+    bottom:20%;
+    right: 5%;
+    width: 112rpx;
+    height: 112rpx;
+}

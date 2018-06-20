@@ -1,0 +1,57 @@
+/* pages/BurstingProject/BurstingProject.wxss */
+page{
+    background-color: #eee;
+}
+.tab-box{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.tab-box .tab-item{
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 120rpx;
+    line-height: 120rpx;
+    box-sizing: border-box
+}
+.tab-box .tab-item text.active{
+    color:#3089dc;
+}
+.tab-box .tab-item:first-child{
+    border-right: 2rpx solid #eee;
+}
+.tab-box .tab-item image{
+    height: 16rpx;
+    width: 24rpx;
+    margin-left: 20rpx;
+}
+.type-box ,.order-box {
+    position: absolute;
+    width: 100%;
+    color:#333;
+    font-size: 48rpx;
+    top:120rpx;
+    left:0;
+    background-color: #fff;
+    z-index:100;
+}
+.type-box view,.order-box view{
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 48rpx;
+    text-align: center;
+    border-bottom: 2rpx solid #eee;
+}
+.type-box view:last-child,.order-box view:last-child{
+    border: none;
+}
+.pro-box{
+    margin-top: 140rpx;
+    background-color:#fff;
+}
+.pro-box image{
+    width: 100%;
+}

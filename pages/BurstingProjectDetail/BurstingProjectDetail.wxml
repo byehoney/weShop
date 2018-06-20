@@ -1,0 +1,27 @@
+<!--pages/BurstingProjectDetail/BurstingProjectDetail.wxml-->
+<view class="page">
+    <image mode="widthFix" class="main-image" src="../../images/BurstingProject/pdetailImg.png"></image>
+    <view class="title">
+        填写信息详细了解
+    </view>
+    <form bindsubmit="formSubmit">
+        <view class="info-box clearfix">
+            <view class="fl text" bindblur="nameBlur">姓名</view>
+            <input name="username" class="fl" />
+        </view>
+        <view class="info-box clearfix">
+            <view class="fl text">手机号码</view>
+            <input name="mobile" bindblur="phoneBlur" type="number" maxlength="11" class="fl" />
+        </view>
+        <view class="note">
+            <view class="note-title">备注</view>
+            <textarea name="note"  bindblur="noteBlur" adjust-position="true" cursor="200" cursor-spacing="200px" show-confirm-bar="false" bindinput="infoChange" placeholder="请输入手机号" maxlength='200' />
+            <view class="count">
+                <text class="num">{{num}}</text>
+                <text>/200</text>
+            </view>
+        </view>
+        <button  class="tj-btn" formType="submit">提交</button>
+    </form>
+    <image bindtap='makeCall' class="tel-icon" src="../../images/BurstingProject/tel.png"></image>
+</view>

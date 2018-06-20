@@ -1,0 +1,41 @@
+<!--pages/BurstingProject/BurstingProject.wxml-->
+<view class="page">
+    <view class="tab-box">
+        <view class="tab-item" bindtap='changeType'>
+            <block wx:if="{{showType}}">
+                <text class="active">{{typeText}}</text>
+                <image src='../../images/BurstingProject/down.png'></image>
+            </block>
+            <block wx:else>
+                <text>{{typeText}}</text>
+                <image src='../../images/BurstingProject/down_grey.png'></image>
+            </block>
+        </view>
+        <view class="tab-item" bindtap='changeOrder'>
+            <block wx:if="{{showOrder}}">
+                <text class="active">{{orderText}}</text>
+                <image src='../../images/BurstingProject/down.png'></image>
+            </block>
+            <block wx:else>
+                <text>{{orderText}}</text>
+                <image src='../../images/BurstingProject/down_grey.png'></image>
+            </block>
+        </view>
+        <view class="type-box" wx:if="{{showType}}" bindtap="selectType">
+            <view data-typeid="1" data-typetext="1">1</view>
+            <view data-typeid="2" data-typetext="2">2</view>
+            <view data-typeid="3" data-typetext="3">3</view>
+        </view>
+        <view class="order-box" wx:if="{{showOrder}}" bindtap="selectOrder">
+            <view data-orderid="1" data-ordertext="4">4</view>
+            <view data-orderid="2" data-ordertext="5">5</view>
+            <view data-orderid="3" data-ordertext="6">6</view>
+        </view>
+    </view>
+    <view class="pro-box">
+        <view class="pro-item" wx:for="{{prolist}}" wx:for-index="pid" wx:for-item="pro" wx:key="{{index}}" bindtap='jumpToDetail' data-proid="{{pid}}">
+            <image src="../../images/BurstingProject/Russia.png"></image>
+        </view>
+    </view>
+</view>
+
