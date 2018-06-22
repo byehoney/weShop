@@ -7,7 +7,8 @@ Page({
     num:0,
     name:'',
     phone:'',
-    note:''
+    note:'',
+    isSubmited:false//是否提交过
   },
   nameBlur:function(e){
     this.setData({
@@ -32,6 +33,9 @@ Page({
   },
   formSubmit:function(e){
     console.log(e);
+    this.setData({
+        isSubmited:true
+    })
     wx.showToast({
         title: '成功',
         icon: 'none',

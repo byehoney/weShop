@@ -72,6 +72,10 @@
     line-height: 80rpx;
     border-radius: 16rpx;
 }
+.tj-btn.tj-end{
+    background-color: #eee;
+    margin-top: 50rpx;
+}
 .tel-icon{
     position: fixed;
     bottom:20%;

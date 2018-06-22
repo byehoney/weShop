@@ -1,10 +1,10 @@
 {
   "pages":[
+    "pages/super/super",
     "pages/BurstingProject/BurstingProject",
     "pages/home/home",
     "pages/qa/qa",
     "pages/alive/alive",
-    "pages/super/super",
     "pages/message/message",
 "pages/BurstingProjectDetail/BurstingProjectDetail"
   ],
@@ -21,7 +21,7 @@
     "borderStyle":"white",
     "list": [
       {
-        "pagePath": "pages/BurstingProject/BurstingProject",
+        "pagePath": "pages/super/super",
         "text": "首页"
       },
       {
@@ -31,7 +31,7 @@
         "pagePath": "pages/alive/alive",
         "text": "直播"
       },{
-        "pagePath": "pages/super/super",
+        "pagePath": "pages/BurstingProject/BurstingProject",
         "text": "干货"
       },{
         "pagePath": "pages/message/message",

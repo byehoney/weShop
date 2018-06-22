@@ -5,62 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    cIndex:0,
+    styleone: 'transform:translate(0, 0px) translateZ(0px) scale(1);position:absolute;width:100%;height:100%;top:0',
+    styleTwo: 'transform:translate(100%, 0px) translateZ(0px) scale(1);position:absolute;width:100%;height:100%;top:0',
+    styleThree: 'transform:translate(200%, 0px) translateZ(0px) scale(1);position:absolute;width:100%;height:100%;top:0',
+    styleFour: 'transform:translate(300%, 0px) translateZ(0px) scale(1);position:absolute;width:100%;height:100%;top:0',
+    styleFive: 'transform:translate(400%, 0px) translateZ(0px) scale(1);position:absolute;width:100%;height:100%;top:0',
+    nstyleone: 'transform:translate(0, 0px) translateZ(0px) scale(0.9);position:absolute;width:100%;height:100%;top:0',
+    nstyleTwo: 'transform:translate(100%, 0px) translateZ(0px) scale(0.9);position:absolute;width:100%;height:100%;top:0',
+    nstyleThree: 'transform:translate(200%, 0px) translateZ(0px) scale(0.9);top:0',
+    nstyleFour: 'transform:translate(300%, 0px) translateZ(0px) scale(0.9);position:absolute;width:100%;height:100%;top:0',
+    nstyleFive: 'transform:translate(400%, 0px) translateZ(0px) scale(0.9);position:absolute;width:100%;height:100%;top:0',
+    toView:'con1'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
+  onShow:function(){
+    this.setData({
+        cIndex: 0
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
+  finishSwiper:function(e){
+    this.setData({
+        cIndex: e.detail.current
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
+  tabTap:function(e){
+    console.log(e);
+    this.setData({
+        toView: e.currentTarget.dataset.tabid
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  contentChange:function(e){
+      console.log(e)
+      return false;
   }
 })

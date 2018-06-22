@@ -1,2 +1,36 @@
 <!--pages/super/super.wxml-->
-<text>pages/super/super.wxml</text>
+<view class="page">
+    <swiper bindanimationfinish="finishSwiper"  circular="true" autoplay="true" previous-margin="80px"  next-margin="-50px" display-multiple-items="1.5" duration="50">
+        <swiper-item  class="scroll-view-item" style="{{cIndex==0?styleone:nstyleone}}">
+            <image mode="widthFix" src="../../images/super/1.png"></image>
+        </swiper-item>
+        <swiper-item  class="scroll-view-item" style="{{cIndex==1?styleTwo:nstyleTwo}}">
+            <image mode="widthFix"  src="../../images/super/3.png"></image>
+        </swiper-item>
+        <swiper-item  class="scroll-view-item" style="{{cIndex==2?styleThree:nstyleThree}}">
+            <image mode="widthFix"  src="../../images/super/4.png"></image>
+        </swiper-item>
+        <swiper-item  class="scroll-view-item" style="{{cIndex==3?styleFour:nstyleFour}}">
+            <image mode="widthFix"  src="../../images/super/5.png"></image>
+        </swiper-item>
+        <swiper-item  class="scroll-view-item" style="{{cIndex==4?styleFive:nstyleFive}}">
+            <image mode="widthFix"  src="../../images/super/6.png"></image>
+        </swiper-item>
+    </swiper>
+    <view class="section section_gap">
+        <scroll-view scroll-with-animation="true" bindscroll="scrollChange" class="scroll-view" scroll-x="true" style="width: 100%;" >
+            <view bindtap='tabTap' data-tabid="con1" class="scroll-item">文案1</view>
+            <view bindtap='tabTap' data-tabid="con2" class="scroll-item">文案2</view>
+            <view bindtap='tabTap' data-tabid="con3" class="scroll-item">文案3</view>
+            <view bindtap='tabTap' data-tabid="con4" class="scroll-item">文案4</view>
+        </scroll-view>
+    </view>
+    <view class="sectionCon">
+        <scroll-view scroll-with-animation="true" bindscroll="contentChange" class="scroll-view" scroll-x="true" style="width: 100%;" scroll-into-view="{{toView}}">
+            <view id="con1" class="scroll-item-con">文案1</view>
+            <view id="con2" class="scroll-item-con">文案2</view>
+            <view id="con3" class="scroll-item-con">文案3</view>
+            <view id="con4" class="scroll-item-con">文案4</view>
+        </scroll-view>
+    </view>
+</view>

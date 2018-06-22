@@ -4,7 +4,7 @@
     <view class="title">
         填写信息详细了解
     </view>
-    <form bindsubmit="formSubmit">
+    <form bindsubmit="formSubmit" wx:if="{{!isSubmited}}">
         <view class="info-box clearfix">
             <view class="fl text" bindblur="nameBlur">姓名</view>
             <input name="username" class="fl" />
@@ -23,5 +23,6 @@
         </view>
         <button  class="tj-btn" formType="submit">提交</button>
     </form>
+    <button wx:if="{{isSubmited}}"  class="tj-btn tj-end">已提交</button>
     <image bindtap='makeCall' class="tel-icon" src="../../images/BurstingProject/tel.png"></image>
 </view>

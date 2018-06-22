@@ -1,1 +1,57 @@
 /* pages/super/super.wxss */
+.page{
+    background-color: navajowhite;
+}
+swiper{
+    width: 100%;
+    -webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	-ms-perspective: 1200px;
+	perspective: 1200px;
+    height: 600rpx;
+}
+ swiper swiper-item{
+    -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d
+ } 
+  swiper swiper-item.active{
+      transform: scale(0.9);
+  }
+swiper swiper-item image{
+    width: 95%;
+    margin:0 auto
+}
+
+/*滚动区域  */
+.section{
+    width: 100%;
+    height: 100rpx;
+}
+.scroll-view{
+    width: 100%;
+    white-space: nowrap; 
+}
+.scroll-view .scroll-item{
+    height: 100rpx;
+    line-height: 100rpx;
+    width: 40%;
+    display: inline-block;
+    text-align: center
+}
+
+.sectionCon{
+    width: 100%;
+    height: 400rpx;
+}
+.scroll-item-con{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    height: 300rpx;
+    line-height: 300rpx;
+}
+::-webkit-scrollbar {
+    width:0;
+}
